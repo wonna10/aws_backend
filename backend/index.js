@@ -9,7 +9,7 @@ const errorMiddleware = require('./src/errorClasses/ErrorMiddleware');
 
 let app = express();
 const corsOptions = {
-    origin: ['http://http://3.210.248.149:3000'],
+    origin: ['http://3.210.248.149:3000'],
     credentials: true,
     optionsSuccessStatus: 200
 };
