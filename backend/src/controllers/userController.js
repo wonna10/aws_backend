@@ -80,7 +80,7 @@ function htmlButton(token) {
     </style>
     </head>
     <body style="margin:0;padding:0;">
-        <span><font size = "7"><a href = 'http://localhost:3005/register/${token}/'>Register Here</a></font>
+        <span><font size = "7"><a href = 'http://3.210.248.149:3000/register/${token}/'>Register Here</a></font>
         </span>
     </body>
     </html>`

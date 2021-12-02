@@ -90,7 +90,7 @@ module.exports.sendResetPasswordEmail = (email) => {
                                             </style>
         
                                             <p>If you did not request a password reset, ignore this message and contact your system administrator reset.</p>
-                                            <p>You can reset your password at this <a href="http://localhost:3005/resetPasswordV2/token=${oneTimeToken}">link</a></p>
+                                            <p>You can reset your password at this <a href="http://3.210.248.149:3000/resetPasswordV2/token=${oneTimeToken}">link</a></p>
                                             <p>Alternatively, use this token to reset your password:</p>
                                             <p>${oneTimeToken}</p>
                                             <p>This link will expire in ${(linkExpiryInSeconds / 60).toFixed(0)} minutes</p>
