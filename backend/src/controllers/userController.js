@@ -86,6 +86,25 @@ function htmlButton(token) {
     </html>`
 }
 
+//simple get
+exports.processGetUserSimple = async (req, res, next) => {
+    console.log("User getting");
+    try {
+        results = await userManager.getUserSimple(10);
+
+
+        return res.status(200).send(results);
+
+    } catch (error) {
+        // let message = 'Server is unable to process your request.';
+        // return res.status(500).send({
+        //     message: error
+        // });
+        next(error);
+    }
+
+}; //End of processGetRights
+
 exports.processCheckUser = async (req, res, next) => {
     let company_id = req.query.companyId
     let user_id = req.query.userId

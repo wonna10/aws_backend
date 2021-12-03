@@ -177,6 +177,7 @@ module.exports.authenticateUser = (email) => {
                 console.log('Database connection error ', err);
                 reject(err);
             } else {
+                console.log("connection success")
                 connection.query(`SELECT u.user_id, u.user_uuid, a.acc_id, u.first_name, u.last_name, u.company_id, p.priv_name, 
                 u.priv_id, u.email, a.password, a.login_attempts, u.user_status, c.status, a.acc_status
                 FROM accounts a, users u, privileges p, companies c

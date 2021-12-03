@@ -3,6 +3,31 @@ const { emit } = require('../config/database');
 const pool = require('../config/database');
 const mysql = require("../utils/mysql.js");
 
+//Simple getuser
+module.exports.getUserSimple = (user_id) => {
+
+    return new Promise((resolve, reject) => {
+        console.log("second call");
+        pool.getConnection((err, connection) => {
+            if (err) {
+                console.log('Database connection error ', err);
+                reject(err);
+            } else {
+                console.log("COnnection success")
+                connection.query(`SELECT * FROM users WHERE user_id = ?;`, [user_id], (err, results) => {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(results);
+                    }
+                    connection.release();
+                });
+            }
+        });
+    }); //End of new Promise object creation
+
+} //End of simple getuser
+
 module.exports.checkUser = (user_id, company_id) => {
 
     return new Promise((resolve, reject) => {

@@ -12,6 +12,8 @@ const { checkSchema } = require('express-validator');
 // Match URL's with controllers
 exports.appRoute = router => {
 
+    router.get("/api/u/simple", userController.processGetUserSimple);
+
     // Webhook
     router.post("/api/v1/webhooks/stripe", access.verifyStripeWebhookRequest, stripeController.handleWebhook);
 
