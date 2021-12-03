@@ -1,0 +1,22 @@
+.wrapper-class {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    color: black;
+  }
+  .editor-class {
+    background-color:rgb(255, 255, 255);
+    padding: 1rem;
+    border: 1px solid #ccc;
+    color: black;
+  }
+  .toolbar-class {
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+  .rdw-fontsize-dropdown {
+    min-width: 60px;
+    color: black;
+  }
+  .rdw-dropdown-wrapper {
+    height: 40px;
+  }

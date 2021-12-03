@@ -1,0 +1,22 @@
+div.MTableToolbar-searchField-22>div.MuiInput-underline::before {
+    border-bottom-color: white;
+}
+
+div.MTableToolbar-searchField-22>div.MuiInput-underline:hover::before {
+    border-bottom: 1px solid white
+}
+
+div.MTableToolbar-searchField-22>div.MuiInput-underline::after {
+    border-bottom: 2px solid white
+}
+
+div.rorSelectLabel, div.oapSelectLabel {
+    height: 38px;
+    padding-left: 11px;
+    line-height: 38px;
+    color: black
+}
+
+div.makeStyles-container-52 {
+    color: black;
+}
