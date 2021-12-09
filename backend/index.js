@@ -9,7 +9,7 @@ const errorMiddleware = require('./src/errorClasses/ErrorMiddleware');
 
 let app = express();
 const corsOptions = {
-    origin: ['http://3.210.248.149:3000'],
+    origin: 'http://52.55.21.79:3000',
     credentials: true,
     optionsSuccessStatus: 200
 };
@@ -99,5 +99,5 @@ process.on('uncaughtException', function (error, origin) {
 
 app.listen(PORT, err => {
     if (err) return console.log(`Cannot Listen on PORT: ${PORT}`);
-    console.log(`Server is Listening on: http://3.210.248.149:${PORT}/`);
+    console.log(`Server is Listening on: http://52.55.21.79:${PORT}/`);
 });
