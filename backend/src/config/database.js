@@ -5,7 +5,7 @@ const config = require('./config');
 
 const pool = mysql.createPool({
     connectionLimit: 1000,
-    host: 'finaltest.c0tcz7eo9vwu.us-east-1.rds.amazonaws.com',
+    host: 'petprojecthosting.c0tcz7eo9vwu.us-east-1.rds.amazonaws.com',
     user: config.databaseUserName,
     password: config.databasePassword,
     database: config.databaseName,
